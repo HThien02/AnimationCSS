@@ -1,49 +1,30 @@
-.card {
-    position: relative;
-    width: 220px;
-    height: 320px;
-    background: #9AEBA3;
+.Nav1 {
+    background-color: #000000;
+}
+.Nav1 a {
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    text-transform: none;
+    transition: 0.5s none;
+}
+
+.Nav1 ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 15px;
-    cursor: pointer;
-    text-transform: uppercase;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
-.card::before, .card::after {
-    position: absolute;
-    content: "";
-    width: 20%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: #DAFDBA;
-    transition: all 0.5s;
-}
-.card::before {
-    top: 0;
-    right: 0;
-    border-radius: 0 15px 0 100%;
-}
-.card::after {
-    bottom: 0;
-    left: 0;
-    border-radius: 0 100% 0 15px;
+.Nav1 ul li {
+    text-decoration: none;
+    margin: 0 0.75em 0 0.75em;
 }
 
-.card:hover::before, .card:hover::after {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    transition: all 0.5s;
+.Nav1 ul:hover a {
+    color: #575757;
 }
 
-.card:hover:after {
-    content: "Checked";
+.Nav1 ul:hover a:hover {
+    color: #8EAAFB;
+    box-shadow: 0 2px 0 0 currentColor;
 }
