@@ -1,0 +1,24 @@
+body {
+    background-color: #FFCAD4;
+    text-align: center;
+}
+.hello {
+    font-size: 5em !important;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    margin-top: 500px;
+}
+.name {
+    width: 100%;
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: -50px;
+    text-align: center;
+}
+.tittle {
+    word-wrap: break-word;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+}
