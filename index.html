@@ -3,17 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>3D Image Flip</title>
+    <!-- Liên kết với tệp CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="Nav1">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
+    <p class="hello">HELLO</p>
+    <p class="name">--Hiếu Thiện--</p>
+    <p class="tittle">This is a repository where I can save CSS's animation can make project more beautiful</p>
+    <!-- Thêm class "theme-checkbox" vào checkbox -->
+    <p>Do you want to change theme? <input type="checkbox" class="theme-checkbox" name="" id=""></p>
+    
+    <!-- Script JavaScript -->
+    <script>
+        let checkbox = document.querySelector('.theme-checkbox');
+        // Thêm điều kiện kiểm tra localStorage
+        if (localStorage.getItem('theme') == "true"){
+            document.getElementsByTagName('link')[0].setAttribute('href', 'dark.css');
+            checkbox.checked = true;
+        }
+
+        checkbox.onchange = function(){
+            if(this.checked){
+                localStorage.setItem('theme', true);
+                document.getElementsByTagName('link')[0].setAttribute('href', 'dark.css');
+            } else {
+                localStorage.setItem('theme', false);
+                document.getElementsByTagName('link')[0].setAttribute('href', 'style.css');
+            }
+        }
+    </script>
 </body>
 </html>
